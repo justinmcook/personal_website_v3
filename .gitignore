@@ -1,4 +1,5 @@
 .idea/
-foundation/
-motion-ui-starter/
+foundation/css
 !foundation/css/building_blocks.css
+foundation/js
+motion-ui-starter/
