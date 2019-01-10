@@ -1,0 +1,295 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Italianno')
+/******************************/
+
+/* Sizes */
+$xxxsmall-rem: 0.5rem
+$xxsmall-rem: 1rem
+$xsmall-rem: 2rem
+$small-rem: 5rem
+$medium-rem: 10rem
+$large-rem: 15rem
+$xlarge-rem: 20rem
+
+$small-px: 12px
+$medium-px: 24px
+$large-px: 36px
+$xlarge-px: 48px
+$xxlarge-px: 60px
+$xxxlarge-px: 72px
+/******************************/
+
+/* Fonts */
+// Fancy
+.fancy-font
+	font-family: 'Italianno', cursive
+
+.small-fancy-font
+	@extend .fancy-font
+	font-size: $small-px
+
+.medium-fancy-font
+	@extend .fancy-font
+	font-size: $medium-px
+
+.large-fancy-font
+	@extend .fancy-font
+	font-size: $large-px
+
+.xlarge-fancy-font
+	@extend .fancy-font
+	font-size: $xlarge-px
+
+.xxlarge-fancy-font
+	@extend .fancy-font
+	font-size: $xxlarge-px
+
+.xxxlarge-fancy-font
+	@extend .fancy-font
+	font-size: $xxxlarge-px
+
+// Normal
+.small-font
+	font-size: $small-px
+
+.medium-font
+	font-size: $medium-px
+
+.large-font
+	font-size: $large-px
+
+.xlarge-font
+	font-size: $xlarge-px
+
+.xxlarge-font
+	font-size: $xxlarge-px
+
+.xxxlarge-font
+	font-size: $xxxlarge-px
+/******************************/
+
+/* Padding */
+// Left
+.xxxsmall-left-padding
+	padding-left: $xxxsmall-rem
+
+.xxsmall-left-padding
+	padding-left: $xxsmall-rem
+
+.xsmall-left-padding
+	padding-left: $xsmall-rem
+
+.small-left-padding
+	padding-left: $small-rem
+
+.medium-left-padding
+	padding-left: $medium-rem
+
+.large-left-padding
+	padding-left: $large-rem
+
+// Right
+.xxxsmall-right-padding
+	padding-right: $xxxsmall-rem
+
+.xxsmall-right-padding
+	padding-right: $xxsmall-rem
+
+.xsmall-right-padding
+	padding-right: $xsmall-rem
+
+.small-right-padding
+	padding-right: $small-rem
+
+.medium-right-padding
+	padding-right: $medium-rem
+
+.large-right-padding
+	padding-right: $large-rem
+
+// Top
+.xxxsmall-top-padding
+	padding-top: $xxxsmall-rem
+
+.xxsmall-top-padding
+	padding-top: $xxsmall-rem
+
+.xsmall-top-padding
+	padding-top: $xsmall-rem
+
+.small-top-padding
+	padding-top: $small-rem
+
+.medium-top-padding
+	padding-top: $medium-rem
+
+.large-top-padding
+	padding-top: $large-rem
+
+// Bottom
+.xxxsmall-bottom-padding
+	padding-bottom: $xxxsmall-rem
+
+.xxsmall-bottom-padding
+	padding-bottom: $xxsmall-rem
+
+.xsmall-bottom-padding
+	padding-bottom: $xsmall-rem
+
+.small-bottom-padding
+	padding-bottom: $small-rem
+
+.medium-bottom-padding
+	padding-bottom: $medium-rem
+
+.large-bottom-padding
+	padding-bottom: $large-rem
+
+// Horizontal
+.xxxsmall-horizontal-padding
+	padding-left: $xxxsmall-rem
+	padding-right: $xxxsmall-rem
+
+.xxsmall-horizontal-padding
+	padding-left: $xxsmall-rem
+	padding-right: $xxsmall-rem
+
+.xsmall-horizontal-padding
+	padding-left: $xsmall-rem
+	padding-right: $xsmall-rem
+
+.small-horizontal-padding
+	padding-left: $small-rem
+	padding-right: $small-rem
+
+.medium-horizontal-padding
+	padding-left: $medium-rem
+	padding-right: $medium-rem
+
+.large-horizontal-padding
+	padding-left: $large-rem
+	padding-right: $large-rem
+
+// Vertical
+.xxxsmall-vertical-padding
+	padding-top: $xxxsmall-rem
+	padding-bottom: $xxxsmall-rem
+
+.xxsmall-vertical-padding
+	padding-top: $xxsmall-rem
+	padding-bottom: $xxsmall-rem
+
+.xsmall-vertical-padding
+	padding-top: $xsmall-rem
+	padding-bottom: $xsmall-rem
+
+.small-vertical-padding
+	padding-top: $small-rem
+	padding-bottom: $small-rem
+
+.medium-vertical-padding
+	padding-top: $medium-rem
+	padding-bottom: $medium-rem
+
+.large-vertical-padding
+	padding-top: $large-rem
+	padding-bottom: $large-rem
+
+// All
+.xxxsmall-padding
+	padding: $xxxsmall-rem
+
+.xxsmall-padding
+	padding: $xxsmall-rem
+
+.xsmall-padding
+	padding: $xsmall-rem
+
+.small-padding
+	padding: $small-rem
+
+.medium-padding
+	padding: $medium-rem
+
+.large-padding
+	padding: $large-rem
+/******************************/
+
+/* Centering and With Sizes */
+.margin-center
+	margin-left: auto
+	margin-right: auto
+
+.quarter-center
+	@extend .margin-center
+	max-width: 25vw
+
+.half-center
+	@extend .margin-center
+	max-width: 50vw
+
+.three-quarter-center
+	@extend .margin-center
+	max-width: 75vw
+
+.parent-quarter-center
+	@extend .margin-center
+	max-width: 25%
+
+.parent-half-center
+	@extend .margin-center
+	max-width: 50%
+
+.parent-three-quarter-center
+	@extend .margin-center
+	max-width: 75%
+/******************************/
+
+/* Flex Types */
+@import _flex
+// Space Around
+.flex-space-around-row
+	+flexbox()
+	flex-direction: row
+	justify-content: space-around
+.flex-space-around-column
+	+flexbox()
+	flex-direction: column
+	justify-content: space-around
+
+// Space Between
+.flex-space-between-row
+	+flexbox()
+	flex-direction: row
+	justify-content: space-between
+.flex-space-between-column
+	+flexbox()
+	flex-direction: column
+	justify-content: space-between
+
+// Center
+.flex-center-row
+	+flexbox()
+	flex-direction: row
+	justify-content: center
+.flex-center-column
+	+flexbox()
+	flex-direction: column
+	justify-content: center
+/******************************/
+
+/* Links */
+
+// Horizontal
+.horizontal_link
+	li
+		display: inline
+		margin: 0
+		padding: 0
+.horizontal_link_no_style
+	@extend .horizontal_link
+	list-style: none
+	a
+		text-decoration: none
+
+/******************************/
