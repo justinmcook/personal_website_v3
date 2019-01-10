@@ -1,3 +1,4 @@
 .idea/
 foundation/
 motion-ui-starter/
+!foundation/css/building_blocks.css
