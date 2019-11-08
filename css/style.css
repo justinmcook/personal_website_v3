@@ -1,5 +1,5 @@
 /* Font Imports */
-@import url("https://fonts.googleapis.com/css?family=Italianno");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 /******************************/
 /* Sizes */
 /******************************/
@@ -427,8 +427,8 @@
 
 body {
   background-color: #000d36;
-  background-image: -webkit-gradient(linear, left top, right top, from(#002827), color-stop(#000d36), to(#002827));
-  background-image: linear-gradient(to right, #002827, #000d36, #002827);
+  background-image: -webkit-gradient(linear, left top, right top, from(#000d20), color-stop(#000d36), to(#000d20));
+  background-image: linear-gradient(to right, #000d20, #000d36, #000d20);
 }
 
 .site-nav a {
